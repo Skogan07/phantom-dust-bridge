@@ -1,0 +1,106 @@
+{
+  "expected": {
+    "remaining001": 0,
+    "canBuild": true,
+    "canApply": false,
+    "missingCount": 0
+  },
+  "snapshot": {
+    "arsenals": [
+      {
+        "fingerprint": "fixture-target",
+        "name": "PC name",
+        "caseCapacity": 2,
+        "slot": 1,
+        "skillIds": [
+          "001",
+          "001",
+          "000",
+          "000",
+          "000",
+          "000",
+          "000",
+          "000",
+          "000",
+          "000",
+          "000",
+          "000",
+          "000",
+          "000",
+          "000",
+          "000",
+          "000",
+          "000",
+          "000",
+          "000",
+          "000",
+          "000",
+          "000",
+          "000",
+          "000",
+          "000",
+          "000",
+          "000",
+          "000",
+          "000"
+        ]
+      }
+    ],
+    "safeStateVerified": true,
+    "fingerprint": "fixture-snapshot",
+    "writeSupported": false,
+    "inventoryVerified": true,
+    "freeInventory": {
+      "001": 1,
+      "002": 0
+    },
+    "gameRunning": true,
+    "profileKey": "fixture-profile",
+    "profileVerified": true,
+    "capturedAt": 0
+  },
+  "request": {
+    "targetSlot": 1,
+    "profileKey": "fixture-profile",
+    "expectedFingerprint": "fixture-target",
+    "deck": {
+      "name": "Fixture",
+      "deckId": "11111111-1111-4111-8111-111111111111",
+      "caseCapacity": 2,
+      "skillIds": [
+        "001",
+        "001",
+        "001",
+        "000",
+        "000",
+        "000",
+        "000",
+        "000",
+        "000",
+        "000",
+        "000",
+        "000",
+        "000",
+        "000",
+        "000",
+        "000",
+        "000",
+        "000",
+        "000",
+        "000",
+        "000",
+        "000",
+        "000",
+        "000",
+        "000",
+        "000",
+        "000",
+        "000",
+        "000",
+        "000"
+      ],
+      "rulesetId": "retail_2017_full",
+      "revision": 12
+    }
+  }
+}

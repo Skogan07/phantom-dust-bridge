@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType><TargetFramework>net10.0-windows</TargetFramework><UseWindowsForms>true</UseWindowsForms><RuntimeIdentifier>win-x64</RuntimeIdentifier><SelfContained>true</SelfContained><PublishSingleFile>true</PublishSingleFile><IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+    <Version>1.8.4</Version><AssemblyVersion>1.8.4.0</AssemblyVersion><FileVersion>1.8.4.0</FileVersion><InformationalVersion>1.8.4</InformationalVersion><IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
+  </PropertyGroup>
+  <ItemGroup><ProjectReference Include="../Bridge.Core/Bridge.Core.csproj"/><FrameworkReference Include="Microsoft.AspNetCore.App"/><PackageReference Include="QRCoder" Version="1.8.0"/><PackageReference Include="Makaretu.Dns.Multicast" Version="0.27.0"/></ItemGroup>
+  <ItemGroup><None Include="../../data/skills.json" Link="skills.json" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" ExcludeFromSingleFile="true"/><None Include="../skill-id-map.json" Link="skill-id-map.json" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" ExcludeFromSingleFile="true"/></ItemGroup>
+  <ItemGroup><EmbeddedResource Include="../../android/app/src/main/res/drawable-nodpi/footer_arsenals.png" Link="Resources/footer_arsenals.png" LogicalName="PhantomDust.PcBridge.App.footer_arsenals.png"/></ItemGroup>
+</Project>
+

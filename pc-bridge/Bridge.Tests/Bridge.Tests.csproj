@@ -1,0 +1,8 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><TargetFramework>net10.0</TargetFramework><IsPackable>false</IsPackable></PropertyGroup>
+  <ItemGroup><ProjectReference Include="../Bridge.Core/Bridge.Core.csproj"/><PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.14.1"/><PackageReference Include="xunit" Version="2.9.3"/><PackageReference Include="xunit.runner.visualstudio" Version="3.1.4"/></ItemGroup>
+  <ItemGroup><None Include="../skill-id-map.json" Link="skill-id-map.json" CopyToOutputDirectory="PreserveNewest"/></ItemGroup>
+  <ItemGroup><None Include="../fixtures/*.json" Link="fixtures/%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest"/></ItemGroup>
+  <!-- Link the self-contained native thunk source so its pure status protocol can be tested without broadening Bridge.App references. -->
+  <ItemGroup><Compile Include="../Bridge.App/NativeGameSaveRequester.cs" Link="NativeGameSaveRequester.cs"/><Compile Include="../Bridge.App/BridgeWindowLifecycle.cs" Link="BridgeWindowLifecycle.cs"/></ItemGroup>
+</Project>
