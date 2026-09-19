@@ -2,13 +2,11 @@
 
 Phantom Dust Bridge is the optional Windows companion for **PD - Arsenal Builder**. It connects the Android app to Phantom Dust over a private local network, reads loaded profiles and arsenals, and performs explicitly confirmed arsenal updates with save verification.
 
-The Bridge is designed for private LAN use only. It is not a cloud service and must not be exposed to the public internet. Pairing credentials, certificates, logs, databases, and diagnostic exports are private data and are intentionally excluded from this repository.
-
 ## Requirements
 
 - Windows x64
 - [.NET 10 SDK](https://dotnet.microsoft.com/download/dotnet/10.0) when building from source
-- Phantom Dust for Windows for live game integration
+- Phantom Dust game
 
 ## Build and test
 
